@@ -1,0 +1,2216 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   
+<head>
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="images/fevicon.png">      
+
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="description" content="Transform your space with Nook Interiors, a trusted interior design company offering tailored solutions for residential and commercial spaces.">
+	  <meta name="keywords" content="Interior Design, Home Interiors, Commercial Interiors, Space Planning, Nook Interiors">
+	  <meta name="author" content="Nook Interiors">
+	  <meta property="og:title" content="Nook Interiors - Inspiring Interior Design Solutions">
+	  <meta property="og:description" content="Discover inspiring interior designs with Nook Interiors. Your dream space is just a click away.">
+	  <meta property="og:image" content="images/home-banner.jpg">
+	  <meta property="og:url" content="https://www.nookinteriors.com">
+	  <meta name="robots" content="index, follow">
+	  <title>Nook Interiors | Inspiring Interior Design Solutions</title>
+	  <link rel="stylesheet" href="style.css">
+      <!-- CSS
+         ============================================ -->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Fontawesome -->
+      <link rel="stylesheet" href="css/fontawesome.css">
+      <!-- Flaticon -->
+      <link rel="stylesheet" href="css/flaticon.css">
+      <!-- Base Icons -->
+      <link rel="stylesheet" href="css/pbminfotech-base-icons.css">
+      <!-- Themify Icons -->
+      <link rel="stylesheet" href="css/themify-icons.css">
+      <!-- Slick -->
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <!-- Magnific -->
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <!-- AOS -->
+      <link rel="stylesheet" href="css/aos.css">
+      <!-- Shortcode CSS -->
+      <link rel="stylesheet" href="css/shortcode.css">
+      <!-- Base CSS -->
+      <link rel="stylesheet" href="css/base.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+	  <style>
+		.pbmit-header-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1000; 
+			background-color:#ffff; /* Add a background color if the content behind it is distracting */
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.93); /* Optional shadow for better visibility */
+			
+		}
+		.pbmit-slider-area {
+			margin-top: calc(100px); /* Adjust this value to match the height of the fixed header */
+		}
+
+		
+
+/* General styling for buttons */
+.package-btn {
+    display: flex;
+    width: 33.3%;
+    padding: 15px;
+    background-color:rgb(179, 130, 58);
+	opacity: 0.5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+ 
+    cursor: pointer;
+	opacity: 2.5;
+}
+
+/* Pricing box */
+.pricing-box {
+    display: none; /* Initially hidden */
+
+
+    border: 1px solid var(--pbmit-global-color);
+    padding: 15px;
+    margin-top: 10px;
+	border-radius:15px;
+}
+
+/* Active pricing box */
+.pricing-box.active {
+    display: block; /* Show the active box */
+}
+
+/* Price badge */
+.price-badge {
+	background-color:rgb(179, 130, 58);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Pricing details */
+.pricing-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	color:#000000;
+}
+
+.pricing-details li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+
+
+/* Desktop View: Display All Packages */
+@media (min-width: 768px) {
+    .pricing-box {
+        display: block !important;
+    }
+}
+
+/* Mobile View: Show Only Selected Package */
+@media (max-width: 767px) {
+    .pricing-box {
+        display: none;
+    }
+
+    #pricing1 {
+        display: block;
+    }
+
+    .mobile-buttons .package-btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 0px 0px;
+        background-color: #617511;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .mobile-buttons .package-btn:hover {
+        background-color: #acd559;
+    }
+}
+
+.read-more-btn {
+   
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+  /* Hide all pricing content in mobile view */
+.mobile-buttons button {
+    margin: 5px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.mobile-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.extra-items p{
+	margin-bottom:-1px;
+}
+
+
+  
+  /* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;  /* Allows items to wrap into rows */
+	justify-content: center;  /* Centers the items horizontally */
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin-left: -15px;  /* Spacing between items */
+	width: 120px;  /* Set a consistent width for each item */
+	display: flex;
+	justify-content: center;  /* Centers the text inside the link */
+  }
+  
+  .pbmit-sortable-link {
+	text-decoration: none;
+	color: #333;
+	padding: 10px 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	display: inline-block;
+	width: 100%;  /* Ensure each link takes full width inside its li */
+	text-align: center;
+  }
+  
+  .pbmit-sortable-link:hover {
+	background-color: #f1f1f1;
+  }
+
+  .extra-items p{
+	color:#000000;
+  }
+  
+  /* Mobile view with 3 rows and 2 columns */
+  @media (max-width: 767px) {
+	.pbmit-sortable-list-ul {
+	  display: grid;  /* Switch to grid layout */
+	  grid-template-columns: repeat(3, 1fr);  /* 2 equal-width columns */
+	  grid-template-rows: repeat(2, auto);  /* 3 rows, automatic height based on content */
+	  gap: 0px;  /* Space between grid items */
+	  justify-items: center;  /* Aligns the items horizontally */
+	}
+  
+	.pbmit-sortable-link {
+	  width: auto;  /* Let the link width adjust based on content */
+	  padding: 15px;  /* Adjust padding for mobile */
+	  text-align: center;  /* Ensure text inside the link is centered */
+	}
+  }
+  
+.package-title{
+	text-align:center;
+}
+  
+@media (max-width: 1200px) {
+	.navbar-toggler {
+		color:black
+   }
+}
+
+
+
+/* Show the button only on mobile view */
+@media (max-width: 768px) {
+    .icon-trigger {
+        display: block; /* Show on smaller screens */
+        text-align: center; /* Optional: Center the button */
+        margin: 10px auto; /* Optional: Add spacing */
+    }
+}
+
+@media (max-width: 1200px) {
+	.navbar-toggler {
+		color:black
+   }
+}
+.multi-columns-row .pbmit-featured-wrapper img {
+width: 100%; /* Ensures the image fills its container */
+height: 380px; /* Sets a uniform height */
+object-fit: cover; /* Crops the image to fit while maintaining aspect ratio */
+border-radius: 8px; /* Optional: Adds rounded corners */
+transition: transform 0.3s ease; /* Optional: Smooth zoom effect on hover */
+}
+
+.multi-columns-row .pbmit-featured-wrapper img:hover {
+transform: scale(1.05); /* Optional: Slight zoom effect on hover */
+}
+
+	  </style>
+
+
+   </head>
+   <body>
+
+	<!-- page wrapper -->
+	<div class="page-wrapper">
+		
+        <!-- Header Main Area -->
+        <header class="site-header header-style-1">
+			<div class="pbmit-header-overlay">
+				<div class="pbmit-main-header-area">
+					<div class="container-fluid">
+						<div class="pbmit-header-content d-flex justify-content-between align-items-center">
+							<div class="pbmit-logo-button-area d-flex justify-content-between align-items-center">
+								<div class="site-branding">
+									<h1 class="site-title">
+										<a href="index.html">
+											<img class="logo-img" src="images/logo.png" alt="nook interiors">
+										</a>
+									</h1>
+									<div class="pbmit-sticky-corner  pbmit-top-right-corner">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg">
+										   	<path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
+										</svg>
+									</div>
+									<div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										   	<path d="M20 20V0C20 12 12 20 0 20H20Z" fill="red"></path>
+										</svg>
+									</div>
+								</div>
+								<div class="pbmit-button-box">
+									<div class="pbmit-header-button">
+										<a href="tel:+91 8056080641" style="color:black">
+											<span class="pbmit-header-button-text-1" style="color:black">+91 8056080641</span>			
+											<span class="pbmit-header-button-text-2" style="color:black">tel:+91 8056080641</span>		
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="site-navigation">
+								<nav class="main-menu navbar-expand-xl navbar-light">
+									<div class="navbar-header">
+									
+											<button class="navbar-toggler" type="button">
+												<i class="pbmit-base-icon-menu-1"></i>
+											</button>
+										
+									</div>
+								
+										<div class="container-fluid">
+											<div class="navbar-header">
+												<div class="icon-trigger">
+													<button type="button" class="pbmit-button-text btn btn-info signup" data-toggle="modal" data-target="#exampleModal">
+														<i class="fas fa-user"></i>
+													</button>
+												</div>
+											</div>
+								
+										</div>
+										
+							
+									
+									<div class="pbmit-mobile-menu-bg"></div>
+									<div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
+										<div class="pbmit-menu-wrap">
+											<span class="closepanel">
+												<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="20.163" height="20.163" viewBox="0 0 26.163 26.163">
+													<rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
+													<rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+												</svg>
+											</span>
+											<ul class="navigation clearfix" >
+												
+														<li class="active" style="color:black;"><a href="index.html">Home</a></li>
+														<li><a href="about-us.html" style="color:black;">About Us</a></li>
+														<li><a href="service.html" style="color:black;" >Services</a></li>
+														<li><a href="project.html" style="color:black;">Project</a></li>
+														<li><a href="contact-us.html" style="color:black;">Contact Us</a></li>
+											</ul>
+										</div>
+									</div>
+								</nav>
+							</div>
+
+							
+							
+							<div class="pbmit-right-box d-flex align-items-center">
+								<div class="pbmit-button-box-second">
+									<a class="pbmit-btn" href="#">
+										<span class="pbmit-button-content-wrapper">
+											<button type="button" class="pbmit-button-text" data-toggle="modal" data-target="#exampleModal">
+												Book Consult
+											</button>
+										</span>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pbmit-slider-area pbmit-slider-one">
+				<div class="swiper-slider" data-autoplay="true" data-loop="true" data-dots="true" data-arrows="false" data-columns="1" data-margin="0" data-effect="fade">
+					<div class="swiper-wrapper">
+						<!-- Slide1 -->
+						<div class="swiper-slide">
+							<div class="pbmit-slider-item">
+								<div class="pbmit-slider-bg" style="background-image: url(images/banner-slider-img/demo1-slide-01.jpg);"></div>
+								<div class="container">
+									<div class="row text-center">
+										<div class="col-md-12">
+											<div class="pbmit-slider-content">
+												<h5 class="pbmit-sub-title transform-top transform-delay-1">Innovative Designs for Every Space</h5>
+												<h2 class="pbmit-title transform-bottom-1 transform-delay-2">
+													Transform your space with creative and functional designs.
+												</h2>												
+												<div class="pbmit-button transform-bottom-1 transform-delay-3">
+													<a class="pbmit-btn pbmit-btn-outline" href="contact-us.html">
+														<span class="pbmit-button-content-wrapper">
+															<span class="pbmit-button-text">Appeal To</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide2 -->
+						<div class="swiper-slide">
+							<div class="pbmit-slider-item">
+								<div class="pbmit-slider-bg" style="background-image: url(images/banner-slider-img/demo1-slide-02.jpg);"></div>
+								<div class="container">
+									<div class="row text-center">
+										<div class="col-md-12">
+											<div class="pbmit-slider-content">
+												<h5 class="pbmit-sub-title transform-top transform-delay-1">Turning Visions into Reality</h5>
+												<h2 class="pbmit-title transform-bottom-1 transform-delay-2">
+													Bringing your dream space to life with precision.
+												</h2>
+												<div class="pbmit-button transform-bottom-1 transform-delay-3">
+													<a class="pbmit-btn pbmit-btn-outline" href="contact-us.html">
+														<span class="pbmit-button-content-wrapper">
+															<span class="pbmit-button-text">Take Counsel</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide3 -->
+						<div class="swiper-slide">
+							<div class="pbmit-slider-item">
+								<div class="pbmit-slider-bg" style="background-image: url(images/banner-slider-img/demo1-slide-03.jpg);"></div>
+								<div class="container">
+									<div class="row text-center">
+										<div class="col-md-12">
+											<div class="pbmit-slider-content">
+												<h5 class="pbmit-sub-title transform-top transform-delay-1">Personalized Interiors</h5>
+												<h2 class="pbmit-title transform-bottom-1 transform-delay-2">
+													Tailored designs that reflect your unique style.
+												</h2>
+												<div class="pbmit-button transform-bottom-1 transform-delay-3">
+													<a class="pbmit-btn pbmit-btn-outline" href="contact-us.html">
+														<span class="pbmit-button-content-wrapper">
+															<span class="pbmit-button-text">Take Counsel</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pbmit-slider-dots-corner">
+						<div class="pbmit-sticky-corner pbmit-top-right-corner">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg" data-stylerecorder="true">
+								<path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red" data-stylerecorder="true"></path>
+							</svg>
+						</div>
+						<div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg" data-stylerecorder="true">
+								<path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red" data-stylerecorder="true"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+        </header>
+        <!-- Header Main Area End Here -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+				<div class="row">
+					
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Your Name *" name="name" required>
+					</div>
+					<div class="col-md-6">
+						<input type="tel" class="form-control" placeholder="Your Phone *" name="phone" required>
+					</div>
+					<div class="col-md-6">
+						<input type="email" class="form-control" placeholder="Your Email *" name="email" required>
+					</div>
+					
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Subject" name="subject" required>
+					</div>
+					<div class="col-md-12">
+						<textarea name="message" cols="40" rows="10" class="form-control" placeholder="Message" required></textarea>
+					</div>
+					
+					<div class="col-md-12">
+						<button class="pbmit-btn pbmit-btn-outline">
+							<i class="form-btn-loader fa fa-circle-o-notch fa-spin fa-fw margin-bottom d-none"></i>
+							<span class="pbmit-button-content-wrapper">
+								<span class="pbmit-button-text">Submit Now</span>
+							</span>
+						</button>
+					</div>
+					<div class="col-md-12 col-lg-12 message-status"></div>
+				</div>
+			</form>
+		</div>
+		
+	  </div>
+	</div>
+  </div>
+        <!-- Page Content -->
+        <div class="page-content">
+            
+            <!-- About --> 
+            <section class="section-xl">
+				<div class="container">
+					<div class="row g-0">
+						<div class="col-md-12 col-xl-6">
+							<div class="about-one-leftbox">
+								<div class="ihbox-style-area">
+									<div class="pbmit-ihbox-style-12">
+										<div class="pbmit-ihbox-headingicon">
+											<div class="pbmit-ihbox-icon">
+												<div class="pbmit-ihbox-icon-wrapper pbmit-icon-type-icon">
+													<i class="pbmit-xinterio-icon pbmit-xinterio-icon-award"></i>
+												</div>
+											</div>
+											<div class="pbmit-ihbox-contents">
+												<h2 class="pbmit-element-title">Best Awarded <br>Company </h2>
+											</div>
+											<div class="pbmit-sticky-corner  pbmit-bottom-left-corner">
+												<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+													<path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
+												</svg>
+											</div>
+											<div class="pbmit-sticky-corner pbmit-top-right-corner">
+												<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+													<path d="M30 30V0C30 16 16 30 0 30H30Z"></path>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-6">
+							<div class="about-one-rightbox">
+								<div class="pbmit-heading-subheading animation-style2">
+									<h4 class="pbmit-subtitle">since 2021</h4>
+									<h2 class="pbmit-title">We design thoughtful, liveable spaces.</h2>
+									<div class="pbmit-heading-desc">
+										We create environments that inspire comfort and creativity. Our designs blend functionality with style, making every space feel like home.									</div>
+								</div>
+								<div class="row g-3">
+									<div class="col-md-6">
+										<article class="pbmit-miconheading-style-9">
+											<div class="pbmit-ihbox-style-9">
+												<div class="pbmit-ihbox-box d-flex align-items-center">
+													<div class="pbmit-ihbox-icon">
+														<div class="pbmit-ihbox-icon-wrapper">
+															<div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+																<i class="pbmit-xinterio-icon pbmit-xinterio-icon-tools"></i>
+															</div>
+														</div>
+													</div>
+													<div class="pbmit-ihbox-contents">
+														<h2 class="pbmit-element-title">
+															Commercial 
+														</h2>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-md-6">
+										<article class="pbmit-miconheading-style-9">
+											<div class="pbmit-ihbox-style-9">
+												<div class="pbmit-ihbox-box d-flex align-items-center">
+													<div class="pbmit-ihbox-icon">
+														<div class="pbmit-ihbox-icon-wrapper">
+															<div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+																<i class="pbmit-xinterio-icon pbmit-xinterio-icon-hard-hat"></i>
+															</div>
+														</div>
+													</div>
+													<div class="pbmit-ihbox-contents">
+														<h2 class="pbmit-element-title">
+															industrial 
+														</h2>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-md-6">
+										<article class="pbmit-miconheading-style-9">
+											<div class="pbmit-ihbox-style-9">
+												<div class="pbmit-ihbox-box d-flex align-items-center">
+													<div class="pbmit-ihbox-icon">
+														<div class="pbmit-ihbox-icon-wrapper">
+															<div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+																<i class="pbmit-xinterio-icon pbmit-xinterio-icon-offer"></i>
+															</div>
+														</div>
+													</div>
+													<div class="pbmit-ihbox-contents">
+														<h2 class="pbmit-element-title">
+															Residential
+														</h2>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-md-6">
+										<article class="pbmit-miconheading-style-9">
+											<div class="pbmit-ihbox-style-9">
+												<div class="pbmit-ihbox-box d-flex align-items-center">
+													<div class="pbmit-ihbox-icon">
+														<div class="pbmit-ihbox-icon-wrapper">
+															<div class="pbmit-icon-wrapper pbmit-icon-type-icon">
+																<i class="pbmit-xinterio-icon pbmit-xinterio-icon-house-design"></i>
+															</div>
+														</div>
+													</div>
+													<div class="pbmit-ihbox-contents">
+														<h2 class="pbmit-element-title">
+															Corporate 
+														</h2>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="pbmit-ihbox pbmit-ihbox-style-5 pt-5">
+									<div class="pbmit-ihbox-box d-flex align-items-center">
+										<div class="pbmit-content-wrapper">
+											<h2 class="pbmit-element-title">G.ARAVIND KUMAR</h2>
+											<div class="pbmit-heading-desc">Founder</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>            
+            <!-- About End -->  
+
+            <!-- Fid Start -->
+            <section class="section-lgb">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-offer"></i>
+											</div>
+											<span class="pbmit-fid-title">Happy Client Review</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="327" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">327</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-engineer"></i>
+											</div>
+											<span class="pbmit-fid-title">Work Departments</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="35" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">35</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-client"></i>
+											</div>
+											<span class="pbmit-fid-title">Our Happy Client</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="327" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">327</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3">
+							<div class="pbminfotech-ele-fid-style-2">
+								<div class="pbmit-fld-contents">
+									<div class="pbmit-fld-wrap">
+										<div class="pbmit-fid-icon-title">
+											<div class="pbmit-sbox-icon-wrapper pbmit-icon-type-icon">
+												<i class="pbmit-xinterio-icon pbmit-xinterio-icon-conversation"></i>
+											</div>
+											<span class="pbmit-fid-title">Staff  members</span>
+										</div>
+										<h4 class="pbmit-fid-inner">
+											<span class="pbmit-fid-before"></span>
+											<span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="172" data-interval="1" data-before="" data-before-style="" data-after="" data-after-style="">172</span>
+											<span class="pbmit-fid"><sup>+</sup></span>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+            <!-- Fid End --> 
+
+			<!-- Service Start --> 
+            <section class="pbmit-extend-animation service-one pbmit-bg-color-secondary">
+				<div class="container">
+					<div class="text-center position-relative">
+						<div class="pbmit-heading-subheading text-center animation-style2">
+							<h4 class="pbmit-subtitle">What we do</h4>
+							<h2 class="pbmit-title">What we offer for you</h2>
+						</div>
+						<div class="pbmit-service-highlight">
+							<h2>Services</h2>
+						</div>
+					</div>
+					<div class="swiper-slider" data-autoplay="false" data-loop="true" data-dots="false" data-arrows="false" data-columns="3" data-margin="30" data-effect="slide">
+						<div class="swiper-wrapper">
+							<!-- Slide1 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/homepage-1/service/service-01.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											<div class="pbmit-serv-cat">
+												<a href="#" rel="tag">Kitchen</a>
+											</div>
+											<h3 class="pbmit-service-title">
+												<a href="#">Transforming Rooms</a>
+											</h3>
+											<div class="pbmit-service-description">
+												<p>Creating unique spaces that reflect your style and needs.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Transforming Rooms">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							<!-- Slide2 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/homepage-1/service/service-02.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											<div class="pbmit-serv-cat">
+												<a href="#" rel="tag">Kitchen</a>
+											</div>
+											<h3 class="pbmit-service-title">
+												<a href="#">Weaving Dreams</a>
+											</h3>
+											<div class="pbmit-service-description">
+												<p> Designing interiors that turn your vision into reality.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Weaving Dreams">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							<!-- Slide3 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/homepage-1/service/service-03.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											<div class="pbmit-serv-cat">
+												<a href="#" rel="tag">Kitchen</a>
+											</div>
+											<h3 class="pbmit-service-title">
+												<a href="#">Interior Decorator</a>
+											</h3>
+											<div class="pbmit-service-description">
+												<p>Expert solutions for beautifully styled and functional spaces.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Interior Decorator">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							<!-- Slide4 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/homepage-1/service/service-04.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											<div class="pbmit-serv-cat">
+												<a href="#" rel="tag">Kitchen</a>
+											</div>
+											<h3 class="pbmit-service-title">
+												<a href="#">Professional Interior</a>
+											</h3>
+											<div class="pbmit-service-description">
+												<p>Offering premium design services to elevate your home or office.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Professional Interior">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+							<!-- Slide5 -->
+							<article class="pbmit-ele-service pbmit-service-style-2 swiper-slide">
+								<div class="pbminfotech-post-item">
+									<div class="pbminfotech-box-content">
+										<div class="pbmit-service-image-wrapper">
+											<div class="pbmit-featured-img-wrapper">
+												<div class="pbmit-featured-wrapper">
+													<img src="images/homepage-1/service/service-05.jpg" class="img-fluid" alt="service-01">
+												</div>
+											</div>
+										</div>
+										<div class="pbmit-service-icon elementor-icon">
+											<i class=""></i>		
+										</div>
+										<div class="pbmit-content-box">
+											<div class="pbmit-serv-cat">
+												<a href="#" rel="tag">Kitchen</a>
+											</div>
+											<h3 class="pbmit-service-title">
+												<a href="#">Interior Work Plan</a>
+											</h3>
+											<div class="pbmit-service-description">
+												<p>A detailed roadmap to bring your interior design ideas to life.</p>
+											</div>
+										</div>
+									</div>
+									<a class="pbmit-service-btn" href="#" title="Interior Work Plan">
+										<span class="pbmit-button-icon">
+											<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+										</span>
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="text-center">
+						<div class="pbmit-service-text">
+							<p>Need more services based on your demand? <span class="pbmit-globalcolor">Contact us</span></p>
+						</div>
+					</div>
+				</div>
+            </section>
+            <!-- Service End -->
+
+			<!-- Ihbox Start -->
+			
+			
+			
+            <!-- Ihbox End --> 
+
+			<!-- Marquee Start --> 
+			<section class="marquee-one">
+				<div class="container-fluid p-0">
+					<div class="swiper-slider marquee">
+						<div class="swiper-wrapper">
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Master Bedroom ">
+										Master Bedroom 
+									</h2>
+								</div>
+							</article>
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Living Room">
+										Living Room
+									</h2>
+								</div>
+							</article>
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Kitchen">
+										Kitchen
+									</h2>
+								</div>
+							</article>
+							<article class="pbmit-marquee-effect-style-1 swiper-slide">
+								<div class="pbmit-tag-wrapper">
+									<h2 class="pbmit-element-title" data-text="Best Gallery">
+										Best Gallery
+									</h2>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+            <!-- Marquee End -->
+
+			<!-- Portfolio Start -->
+			<section class="pbmit-bg-color-light portfolio-one pbmit-sortable-yes">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-12 col-xl-4">
+							<div class="pbmit-heading-subheading animation-style2">
+								<h4 class="pbmit-subtitle">Process</h4>
+								<h2 class="pbmit-title">Our Latest Project</h2>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-8">
+							<div class="pbmit-sortable-list">
+							
+
+
+								<ul class="pbmit-sortable-list-ul">
+									<li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*">All</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="architecture">Architecture</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="bedroom">Bedroom</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="diningroom">Dining</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="kitchen">Kitchen</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="bathroom">Bathroom</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="pbmit-element-posts-wrapper row multi-columns-row">
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 bedroom col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/living room.jpg" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">Living Room</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 bedroom col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/master bedroom.jpg" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">Bedroom</a>
+										</div>
+									
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 kitchen col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/kitchen.jpg" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">Kitchen</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 diningroom col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/dining room.jpg" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">dining room</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 bathroom col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/bathroom.webp" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">Bathroom</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 architecture col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/home office.jpg" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">Home Office</a>
+										</div>
+									
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 architecture col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/garage.webp" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">Garage</a>
+										</div>
+									
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-portfolio pbmit-portfolio-style-2 furniture col-md-6 col-lg-3">
+							<div class="pbminfotech-post-content">
+								<div class="pbmit-featured-img-wrapper">
+									<div class="pbmit-featured-wrapper">
+										<img src="images/portfolio/conference.jpg" class="img-fluid" alt="">
+									</div>
+								</div>
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-titlebox">
+										<div class="pbmit-port-cat">
+											<a href="#" rel="tag">conference</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- Portfolio End -->
+
+			<!-- Pricing Start -->
+			<section class="section-xl pricing-one-bg">
+				<div class="container">
+					<!-- Package Buttons (Mobile View) -->
+					<div class="mobile-buttons d-md-none text-center">
+						<button class="package-btn" onclick="showPackageMobile('pricing1')">PACKAGE I</button>
+						<button class="package-btn" onclick="showPackageMobile('pricing2')">PACKAGE II</button>
+						<button class="package-btn" onclick="showPackageMobile('pricing3')">PACKAGE III</button>
+						<button class="package-btn" onclick="showPackageMobile('pricing4')">PACKAGE Ⅳ</button>
+
+					</div>
+			
+					<!-- Desktop View (Always Shows All Packages) -->
+					<div class="row g-4 justify-content-center d-none d-md-flex">
+						<!-- Pricing Plan 1 -->
+						<!-- Pricing Plan 1 -->
+<div class="col-md-3 pricing-box" id="pricing1">
+    <h3 class="package-title">PACKAGE I</h3>
+    <div class="pricing-header">
+        <div class="price-badge">Ground Floor<br>Rs. 2300 / Sq.Ft</div>
+        <div class="price-badge">First Floor<br>Rs. 2100 / Sq.Ft</div>
+    </div>
+    <ul class="pricing-details">
+		<li>BASEMENT HEIGHT 5 FEET</li>
+		<li>FIRST QUALITY CHAMBER BRICKS</li>
+		<li>BRANDED TMT STEELS</li>
+		<li>2% x 2% VITRIFIED TILES</li>
+		<li>MAIN DOOR TEAKWOOD</li>
+    </ul>
+    <!-- Extra items for Read More functionality -->
+    <div class="extra-items" style="display: none;">
+		<p>OTHER DOORS & WINDOWS<br> KONGU WITH ENAMEL PAINT</p>
+		<p>FINOLEX WIRES</p>
+		<p>INVERTER WIRING</p>
+		<p>BRANDED SWITCHES</p>
+		<p>GRANITE COOKING PLATFORM</p>
+		<p>BRANDED CLOSET WITH FLOOR<br> MOUNTED</p>
+		<p>WALL MIXER</p>
+		<p>SINK WITH STAINLESS STEEL</p>
+		<p>WALL PUTTY FOR INTERIORS</p>
+		<p>WALL ONLY</p>
+		<p>INTERIOR & EXTERIOR EMULSION<br> PAINT - IV GRADE PAINT</p>
+
+		
+    </div>
+    <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+</div>
+
+			
+						<!-- Pricing Plan 2 -->
+						<div class="col-md-3 pricing-box" id="pricing2">
+							<h3 class="package-title">PACKAGE II</h3>
+							<div class="pricing-header">
+								<div class="price-badge">Ground Floor<br>Rs. 2500 / Sq.Ft</div>
+								<div class="price-badge">First Floor<br>Rs. 2300 / Sq.Ft</div>
+							</div>
+							<ul class="pricing-details">
+								<li>BASEMENT HEIGHT 5 FEET</li>
+								<li>FIRST QUALITY CHAMBER BRICKS</li>
+								<li>BRANDED TMT STEELS</li>
+								<li>4x2 VITRIFIED TILES</li>
+								<li>MAIN DOOR TEAKWOOD</li>
+							</ul> <div class="extra-items" style="display: none;">
+								<p>OTHER DOORS & WINDOWS KONGU WITH ENAMEL PAINT</p>
+								<p>MODULAR KITCHEN - WATER PROOF<br> HMR PRE LAMINATED SHEET</p>
+								<p>WARDROBES HMR PRE LAMINATED SHEET</p>
+								<p>FINOLEX WIRES</p>
+								<p>INVERTER WIRING</p>
+								<p>METAL BOXES WITH BRANDED<br> MODULAR SWITCHES</p>
+								<p>GRANITE COOKING PLATFORM</p>
+								<p>QUARTZ SINK WITH SINGLE BOWL</p>
+								<p>WALL MOUNTED CLOSET WITH FLUSH VALVE</p>
+								<p>WALL MIXER</p>
+								<p>WALL PUTTY INTERIOR WALL & CEILING</p>
+								<p>INTERIOR & EXTERIOR EMULSION<br> PAINT - III GRADE PAINT</p>
+
+							</div>
+				<button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+						</div>
+			
+						<!-- Pricing Plan 3 -->
+						<div class="col-md-3 pricing-box" id="pricing3">
+							<h3 class="package-title">PACKAGE III</h3>
+							<div class="pricing-header">
+								<div class="price-badge">Ground Floor<br>Rs. 2700 / Sq.Ft</div>
+								<div class="price-badge">First Floor<br>Rs. 2500 / Sq.Ft</div>
+							</div>
+							<ul class="pricing-details">
+								<li>BASEMENT HEIGHT 5 FEET</li>
+								<li>FIRST QUALITY CHAMBER BRICKS</li>
+								<li>BRANDED TMT STEELS</li>
+								<li>+5% x 2% VITRIFIED TILES</li>
+								<li>ALL DOORS & WINDOWS TEAKWOOD WITH POLISH</li>
+							</ul>
+							<div class="extra-items" style="display: none;">
+								<p>MODULAR KITCHEN - HMR WATER<br> PROOF SHEET FINISHED WITH MICA</p>
+								<p>WARDROBES - HMR WATER PROOF LAMINATED SHEET</p>
+								<p>FINOLEX WIRES</p>
+								<p>INVERTER WIRING</p>
+								<p>BRANDED MODULAR SWITCHES</p>
+								<p>SYNTHETIC ARTIFICIAL MARBLE COOKING PLATFORM</p>
+								<p>QUARTZ SINK WITH DRAIN TRAY</p>
+								<p>BRANDED CLOSET WITH FLUSH VALVE</p>
+								<p>SHOWER WITH DIVERTER MIXER</p>
+								<p>COOL ROOF TILES IN TERRACE</p>
+								<p>WALL PUTTY INTERIOR WALL & CEILING</p>
+								<p>INTERIOR & EXTERIOR EMULSION PAINT - II GRADE PAINT</p>
+								
+								
+							</div>
+							<button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+						</div>
+
+
+						<div class="col-md-3 pricing-box" id="pricing3">
+							<h3 class="package-title">PACKAGE Ⅳ</h3>
+							<div class="pricing-header">
+								<div class="price-badge">Ground Floor<br>Rs. 2900 / Sq.Ft</div>
+								<div class="price-badge">First Floor<br>Rs. 2700 / Sq.Ft</div>
+							</div>
+							<ul class="pricing-details">
+								<li>FIRST QUALITY CHAMBER BRICKS</li>
+								<li>BRANDED TMT STEELS</li>
+								<li>6x4 VITRIFIED TILES</li>
+								<li>ALL DOORS & WINDOWS TEAKWOOD <br> WITH POLISH</li>
+								<li>MODULAR KITCHEN - WATER PROOF</li>
+							</ul>
+							<div class="extra-items" style="display: none;">
+								<p>HMR SHEET MICA WITH PAINTED <br> GLASS FINISHING</p>
+								<p>WARDROBES WATER PROOF SHEET<br> WITH MIRROR PAINTED GLASS FINISHING</p>
+								<p>FINOLEX WIRES</p>
+								<p>INVERTER WIRING</p>
+								<p>BRANDED MODULAR SWITCHES</p>
+								<p>SYNTHETIC ARTIFICIAL MARBLE<br> COOKING PLATFORM</p>
+								<p>QUARTZ SINK WITH DOUBLE BOWL</p>
+								<p>BRANDED CLOSET WITH FLUSH VALVE</p>
+								<p>NATURAL STONE ELEVATION WORK<br> WITH EXTERIOR LED LIGHTS</p>
+								<p>INTERIOR STAIRCASE WITH LEPRATHO<br> FINISH GRANITE FLOORING & <br>TEAK WOOD RAILINGS WITH GLASS</p>
+								<p>FALSE CEILING WITH LED LIGHTS</p>
+								<p>COOL ROOF TILES IN TERRACE</p>
+								<p>WALL PUTTY INTERIOR WALL & CEILING</p>
+								<p>INTERIOR & EXTERIOR EMULSION</p>
+								<p>PAINT - I GRADE PAINT</p>								
+								
+							</div>
+							<button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+						</div>
+					</div>
+			
+					<!-- Mobile View Content -->
+					<div class="mobile-content d-md-none">
+						<div id="mobile-content-container">
+							<!-- By default, show Package 1 -->
+							<div id="mobile-pricing1">
+								<h3 class="package-title">PACKAGE I</h3>
+								<div class="pricing-header">
+									<div class="price-badge">Ground Floor<br>Rs. 2900 / Sq.Ft</div>
+									<div class="price-badge">First Floor<br>Rs. 2700 / Sq.Ft</div>
+								</div>
+								<ul class="pricing-details">
+									<li>BASEMENT HEIGHT 5 FEET</li>
+									<li>FIRST QUALITY CHAMBER BRICKS</li>
+									<li>BRANDED TMT STEELS</li>
+									<li>5 ¼ x 2 ¾ VITRIFIED TILES</li>
+									<li>ALL DOORS & WINDOWS TEAKWOOD WITH POLISH</li>
+								</ul>
+								<button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+            <!-- Pricing End -->
+
+			<!-- Testimonial Start -->
+            <section class="pbmit-bg-color-light testimonial-one">
+				<div class="container pbmit-col-stretched-yes pbmit-col-right">
+					<div class="pbmit-col-stretched-right">
+						<div class="row g-0">
+							<div class="col-md-12 col-lg-3">
+								<div class="pbmit-testimonialbox-left">
+									<div class="pbmit-heading-subheading animation-style2">
+										<h4 class="pbmit-subtitle">Client feedback</h4>
+										<h2 class="pbmit-title">Hear from clients.</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-9 pbmit-testimonialbox-right">
+								<div class="swiper-slider" data-autoplay="true" data-loop="true" data-dots="false" data-arrows="true" data-columns="2.6" data-margin="30" data-effect="slide">
+									<div class="swiper-wrapper">
+										<!-- Slide1 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+															<p>Absolutely love the design and functionality of the space! The team understood my vision and transformed it into a beautiful reality. Highly recommend their services!</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Priya</h3>
+															<div class="pbminfotech-testimonial-detail">Madurai</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/homepage-1/reviewer/reviewer-01.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+										<!-- Slide2 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+															<p>The attention to detail was beyond my expectations. From the layout to the color schemes, everything was perfect. I now have a space that truly feels like home!.</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Rajesh</h3>
+															<div class="pbminfotech-testimonial-detail">Theni</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/homepage-1/reviewer/reviewer-02.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+										<!-- Slide3 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+															<p>Working with this team was a fantastic experience. They were professional, creative, and really listened to what I wanted. The end result is stunning and comfortable!.</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Anjali</h3>
+															<div class="pbminfotech-testimonial-detail">Chennai</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/homepage-1/reviewer/reviewer-03.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+										<!-- Slide4 -->
+										<article class="pbmit-testimonial-style-1 swiper-slide">
+											<div class="pbminfotech-post-item">
+												<div class="pbmit-box-content-wrap">
+													<div class="pbminfotech-box-star-ratings">
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+														<i class="pbmit-base-icon-star-1 pbmit-active"></i>
+													</div>
+													<div class="pbminfotech-box-desc">
+														<blockquote class="pbminfotech-testimonial-text">
+															<p>I’m thrilled with my new interiors! The designers really took the time to understand my needs and created a space that’s both functional and beautiful. Worth every penny!</p>
+														</blockquote>
+													</div>
+													<div class="pbminfotech-box-author">
+														<div class="pbmit-auther-content">
+															<h3 class="pbminfotech-box-title">Vikram</h3>
+															<div class="pbminfotech-testimonial-detail">Theni</div>
+														</div>
+													</div>
+													<div class="pbminfotech-box-img">
+														<div class="pbmit-featured-img-wrapper">
+															<div class="pbmit-featured-wrapper">
+																<img src="images/homepage-1/reviewer/reviewer-04.jpg" class="img-fluid" alt="reviewer-04">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ihbox-style-area">
+						<div class="pbmit-ihbox-style-2">
+							<div class="pbmit-ihbox-headingicon">
+								<div class="pbmit-ihbox-contents d-flex align-items-center">
+									<div class="pbmit-title-wrap">
+										<h2 class="pbmit-element-title">4.82</h2>
+									</div>
+									<div class="pbmit-icon-wrap">
+										<div class="pbmit-ihbox-svg">
+											<div class="pbmit-ihbox-svg-wrapper">
+												<svg xmlns="http://www.w3.org/2000/svg" width="512" height="90.51" viewBox="0 0 512 90.51">
+													<path d="M89.26,29.43l-24.9-3.62L53.23,3.33c-2.2-4.44-9.48-4.44-11.68,0L30.42,25.81,5.58,29.43A6.52,6.52,0,0,0,2,40.55L20,58.11,15.74,82.88a6.51,6.51,0,0,0,9.46,6.87l22.19-11.7,22.25,11.7a6.5,6.5,0,0,0,3,.75,6.51,6.51,0,0,0,6.43-7.62L74.86,58.11l18-17.56a6.52,6.52,0,0,0-3.62-11.12Z"></path>
+													<path d="M193.55,29.43l-24.9-3.62L157.52,3.33c-2.2-4.44-9.48-4.44-11.68,0L134.71,25.81l-24.84,3.62a6.52,6.52,0,0,0-3.61,11.12l18,17.56L120,82.88a6.52,6.52,0,0,0,9.47,6.87l22.19-11.7,22.25,11.7a6.5,6.5,0,0,0,3,.75,6.51,6.51,0,0,0,6.43-7.62l-4.24-24.77,18-17.56a6.52,6.52,0,0,0-3.62-11.12Z"></path>
+													<path d="M297.84,29.43l-24.9-3.62L261.81,3.33c-2.2-4.44-9.48-4.44-11.68,0L239,25.81l-24.84,3.62a6.52,6.52,0,0,0-3.61,11.12l18,17.56-4.25,24.77a6.52,6.52,0,0,0,9.47,6.87L256,78.05l22.25,11.7a6.5,6.5,0,0,0,3,.75,6.51,6.51,0,0,0,6.43-7.62l-4.24-24.77,18-17.56a6.52,6.52,0,0,0-3.62-11.12Z"></path>
+													<path d="M402.13,29.43l-24.9-3.62L366.1,3.33c-2.2-4.44-9.48-4.44-11.69,0L343.29,25.81l-24.84,3.62a6.52,6.52,0,0,0-3.61,11.12l18,17.56L328.6,82.88a6.52,6.52,0,0,0,9.47,6.87l22.18-11.7,22.26,11.7a6.5,6.5,0,0,0,3,.75A6.51,6.51,0,0,0,392,82.88l-4.24-24.77,18-17.56a6.52,6.52,0,0,0-3.61-11.12Z"></path>
+													<path d="M511.68,33.86a6.54,6.54,0,0,0-5.26-4.43l-24.9-3.62L470.39,3.33c-2.2-4.44-9.48-4.44-11.69,0L447.58,25.81l-24.84,3.62a6.52,6.52,0,0,0-3.61,11.12l18,17.56-4.25,24.77a6.52,6.52,0,0,0,6.42,7.62,6.61,6.61,0,0,0,3.05-.75l22.19-11.7,22.26,11.7a6.46,6.46,0,0,0,6.86-.5,6.53,6.53,0,0,0,2.59-6.37L492,58.11l18-17.56A6.54,6.54,0,0,0,511.68,33.86Z"></path>
+												</svg>
+											</div>
+										</div>
+										<h4 class="pbmit-element-heading">
+											327 Rating
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+            <!-- Testimonial End -->
+
+            <!-- Client Start --> 
+            <section class="section-lgb pbmit-bg-color-light">
+				<div class="container">
+					<div class="swiper-slider" data-autoplay="true" data-loop="true" data-dots="false" data-arrows="false" data-columns="6" data-margin="0" data-effect="slide">
+						<div class="swiper-wrapper">
+							<!-- Slide1 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-01.png" class="img-fluid" alt="">
+
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-01.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide2 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-02.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-02.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide3 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-03.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-03.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide4 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-04.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-04.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide5 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-05.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-05.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide6 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-06.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-06.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide7 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-07.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-07.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<!-- Slide8 -->
+							<article class="pbmit-client-style-1 swiper-slide">
+								<div class="pbmit-border-wrapper">
+									<div class="pbmit-client-wrapper pbmit-client-with-hover-img">
+										<h4 class="pbmit-hide">Client 12</h4>
+										<div class="pbmit-client-hover-img">
+											<img src="images/homepage-1/client/client-global-08.png" class="img-fluid" alt="">
+										</div>
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/client/client-grey-08.png" class="img-fluid" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+            </section>
+            <!-- Client End -->
+
+			<!-- Video Start -->
+			<section class="pbmit-bg-color-secondary video-section-one fadeIn animated animated-slow"> 
+				<div class="pbmit-bg-overlay"></div>
+				<div class="container">
+					<div class="text-center">
+						<div class="pbmit-heading-subheading-style-1 animation-style4">
+							<h4 class="pbmit-subtitle">Emergency call 8056080641</h4>
+							<h2 class="pbmit-title">We make the creative interior <br>solutions for <span id="js-rotating">manufacture, development, composition, explanation</span></h2>
+						</div>
+						<div class="play-button">
+							<a class="pbmit-icon pbmin-lightbox-video" href="images/portfolio/interiors.mp4">
+								<i class="fa fa-play"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Video Start -->
+
+			<!-- Blog Start -->
+<section class="section-md">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<div class="pbmit-heading-subheading animation-style4">
+					<h4 class="pbmit-subtitle">Our Expertise</h4>
+					<h2 class="pbmit-title">Latest Insights & Tips</h2>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="blog-btn">
+					<a class="pbmit-btn pbmit-btn-outline" href="blog-grid-col-4.html">
+						<span class="pbmit-button-content-wrapper">
+							<span class="pbmit-button-text">Explore All Blogs</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row g-0 align-items-center">
+			<div class="col-md-12 col-xl-4">
+				<div class="row">
+					<div class="blog-one-left-col">
+						<article class="pbmit-ele-blog pbmit-blog-style-2 col-md-12">
+							<div class="post-item">
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-content-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/blog/blog-01.jpg" class="img-fluid" alt=""></div>
+										</div>
+										<div class="pbmit-meta-wraper">
+											<div class="pbmit-meta-date-wrapper pbmit-meta-line">
+												<div class="pbmit-meta-date">
+													<span class="pbmit-post-date">
+														<i class="pbmit-base-icon-calendar-3"></i>June 15, 2024
+													</span>
+												</div>
+											</div>
+											<div class="pbmit-meta-author pbmit-meta-line">
+												<span class="pbmit-post-author">
+													<i class="pbmit-base-icon-user-3"></i>
+													<span>By</span>admin
+												</span>
+											</div>
+											<div class="pbmit-content-wrapper">
+												<h3 class="pbmit-post-title">
+													<a href="#">Sustainable Materials in Modern Interior Design</a>
+												</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-blog pbmit-blog-style-2 col-md-12">
+							<div class="post-item">
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-content-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/blog/blog-02.jpg" class="img-fluid" alt=""></div>
+										</div>
+										<div class="pbmit-meta-wraper">
+											<div class="pbmit-meta-date-wrapper pbmit-meta-line">
+												<div class="pbmit-meta-date">
+													<span class="pbmit-post-date">
+														<i class="pbmit-base-icon-calendar-3"></i>June 10, 2024
+													</span>
+												</div>
+											</div>
+											<div class="pbmit-meta-author pbmit-meta-line">
+												<span class="pbmit-post-author">
+													<i class="pbmit-base-icon-user-3"></i>
+													<span>By</span>admin
+												</span>
+											</div>
+											<div class="pbmit-content-wrapper">
+												<h3 class="pbmit-post-title">
+													<a href="#">Maximizing Small Space: Tips for Studio Apartments</a>
+												</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="pbmit-ele-blog pbmit-blog-style-2 col-md-12">
+							<div class="post-item">
+								<div class="pbminfotech-box-content">
+									<div class="pbminfotech-content-inner">
+										<div class="pbmit-featured-img-wrapper">
+											<div class="pbmit-featured-wrapper">
+												<img src="images/homepage-1/blog/blog-03.jpg" class="img-fluid" alt=""></div>
+										</div>
+										<div class="pbmit-meta-wraper">
+											<div class="pbmit-meta-date-wrapper pbmit-meta-line">
+												<div class="pbmit-meta-date">
+													<span class="pbmit-post-date">
+														<i class="pbmit-base-icon-calendar-3"></i>June 05, 2024
+													</span>
+												</div>
+											</div>
+											<div class="pbmit-meta-author pbmit-meta-line">
+												<span class="pbmit-post-author">
+													<i class="pbmit-base-icon-user-3"></i>
+													<span>By</span>admin
+												</span>
+											</div>
+											<div class="pbmit-content-wrapper">
+												<h3 class="pbmit-post-title">
+													<a href="#">The Future of Smart Homes and Technology Integration</a>
+												</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-xl-8">
+				<div class="blog-one-right-col">
+					<article class="pbmit-ele-blog pbmit-blog-style-3">
+						<div class="post-item d-flex">
+							<div class="pbmit-featured-container">
+								<div class="pbmit-bg-image" style="background-image:url('images/homepage-1/blog/blog-04b.jpg')">
+									<div class="pbmit-featured-img-wrapper">
+										<div class="pbmit-featured-wrapper">
+											<img src="#" class="img-fluid" alt="blog-01">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pbminfotech-box-wrap">
+								<div class="pbminfotech-box-content">
+									<div class="pbmit-date-admin-wraper d-flex align-items-center">
+										<div class="pbmit-meta-date pbmit-meta-line">
+											<span class="pbmit-post-date">
+												<i class="pbmit-base-icon-calendar-3"></i>June 01, 2024
+											</span>
+										</div>
+										<div class="pbmit-meta-author pbmit-meta-line">
+										<span class="pbmit-post-author">
+											<i class="pbmit-base-icon-user-3"></i>
+											<span>By</span>admin
+										</span>
+										</div>
+									</div>
+									<h3 class="pbmit-post-title">
+										<a href="#">Choosing the Right Color Scheme for Your Living Room</a>
+									</h3>
+									<div class="pbminfotech-box-desc">
+										Understanding how colors can influence mood and space dynamics.
+									</div>
+								</div>
+								<a class="pbmit-blog-btn" href="#">
+									<span class="pbmit-button-icon">
+										<i class="pbmit-base-icon-pbmit-up-arrow"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Blog End -->
+
+
+        </div>
+        <!-- Page Content End -->
+
+        <!-- footer -->
+		<footer style="background-color:#403226; color: white; padding: 20px 0;">
+			<div class="container">
+			  <div class="row">
+				<!-- Logo and Address -->
+				<div class="col-md-4">
+					<div class="site-branding">
+						<h1 class="site-title">
+							<a href="index.html">
+								<img src="images\flogo.png" alt="Nearlook" style="width: 220px;">
+							</a>
+						</h1>
+						<div class="pbmit-sticky-corner  pbmit-top-right-corner">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="" xmlns="http://www.w3.org/2000/svg">
+								   <path d="M20 20V0C20 16 16 20 0 20H20Z" fill="red"></path>
+							</svg>
+						</div>
+						<div class="pbmit-sticky-corner pbmit-bottom-left-corner">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								   <path d="M20 20V0C20 12 12 20 0 20H20Z" fill="red"></path>
+							</svg>
+						</div>
+					</div>				  <p>
+					<span class="icon" id="address-icon"><i class="fas fa-map-marker-alt"></i></span>
+					Divyasabri Complex, Subban Street, Theni
+				  </p>
+				  <p>
+					<span class="icon" id="phone-icon"><i class="fas fa-phone-alt"></i></span>
+					8056080641
+				  </p>
+				  <p>
+					<span class="icon" id="email-icon"><i class="fas fa-envelope"></i></span>
+					thenook.ceo@gmail.com
+				  </p>
+				  
+				</div>
+		  
+				<!-- Links -->
+				<div class="col-md-4">
+				  <h5 style="color:black;">Our Links</h5>
+				  <ul style="list-style: none; padding: 0;">
+					<li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+					<li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+					<li><a href="#" style="color: white; text-decoration: none;">Services</a></li>
+					<li><a href="#" style="color: white; text-decoration: none;">project</a></li>
+					<li><a href="#" style="color: white; text-decoration: none;">Contact Us</a></li>
+				  </ul>
+				</div>
+		  
+				<!-- Newsletter -->
+				<div class="col-md-4 subscribe-section">
+					<h5 class="subscribe-title">Subscribe to the Newsletter!</h5>
+					<p class="subscribe-text">Get the latest news & updates</p>
+					<form class="subscribe-form">
+					  <input type="email" placeholder="Email Address" class="subscribe-input">
+					  <button type="submit" class="subscribe-button">Subscribe Now</button>
+					</form>
+					<div class="social-icons">
+					  <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+					  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+					  <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+					  <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+					</div>
+				  </div>
+				  
+				</div>
+			  </div>
+		  
+			  <!-- Footer Bottom -->
+			  <div style="text-align: center; margin-top: 20px; border-top: 1px solid white; padding-top: 10px;">
+				<p>Copyright © 2024 Nearlook - Mart Pvt Ltd. All rights reserved.</p>
+				<p>
+					<a href="privacy_policy.html" style="color: orange; text-decoration: none;">Privacy Policy</a> |
+					<a href="terms_of_service.html" style="color: orange; text-decoration: none;">Terms & Conditions</a>
+				</p>
+			  </div>
+			</div>
+		</footer>
+		  
+		  
+		
+
+    </div>
+    <!-- page wrapper End -->
+
+	<!-- Search Box Start Here -->
+	<div class="pbmit-search-overlay">
+		<div class="pbmit-icon-close">
+			<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="28.163" height="28.163" viewBox="0 0 26.163 26.163">
+				<rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
+				<rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+			</svg>
+		</div>
+		<div class="pbmit-search-outer"> 
+			<form class="pbmit-site-searchform">
+				<input type="search" class="form-control field searchform-s" name="s" placeholder="Search …">
+				<button type="submit"></button>
+			</form>
+		</div>
+	</div>
+	<!-- Search Box End Here -->
+
+	<!-- Scroll To Top -->
+	<div class="pbmit-progress-wrap">
+		<svg class="pbmit-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+		</svg>	
+	</div>
+	<!-- Scroll To Top End -->
+
+	<!-- JS
+		============================================ -->
+	<!-- jQuery JS -->
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+	</script><script src="js/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jquery Waypoints JS -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- jquery Appear JS -->
+	<script src="js/jquery.appear.js"></script>
+	<!-- Numinate JS -->
+	<script src="js/numinate.min.js"></script>
+	<!-- Slick JS -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Magnific JS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Circle Progress JS -->
+	<script src="js/circle-progress.js"></script> 
+	<!-- countdown JS -->
+	<script src="js/jquery.countdown.min.js"></script> 
+	<!-- AOS -->
+	<script src="js/aos.js"></script>
+	<!-- GSAP -->
+	<script src='js/gsap.js'></script>
+	<!-- Scroll Trigger -->
+	<script src='js/ScrollTrigger.js'></script>
+	<!-- Split Text -->
+	<script src='js/SplitText.js'></script>
+	<!-- Magnetic -->
+	<script src='js/magnetic.js'></script>
+	<!-- Morphext JS -->
+	<script src="js/morphext.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<!-- GSAP Animation -->
+	<script src='js/gsap-animation.js'></script>
+	<!-- Isotope JS -->
+	<script src="js/isotope.pkgd.min.js"></script> 
+	<!-- Scripts JS -->
+	<script src="js/scripts.js"></script>
+
+   <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8f473da458f47ea3',t:'MTczNDYwOTcxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/b/scripts/jsd/787bc399e22f/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8f473da458f47ea3","version":"2024.10.5","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"125856bf84ab44059737e93b01aa0fef","b":1}' crossorigin="anonymous"></script>
+
+
+   <div id="mobile-content-container"></div>
+
+   <script>
+   document.addEventListener('DOMContentLoaded', function () {
+	   const mobileContentContainer = document.getElementById('mobile-content-container');
+   
+	   // Load default package on page refresh
+	   showPackageMobile('pricing1');
+   
+	   // Event delegation for Read More button
+	   mobileContentContainer.addEventListener('click', function (event) {
+		   if (event.target && event.target.classList.contains('read-more-btn')) {
+			   toggleReadMore(event.target);
+		   }
+	   });
+   });
+   
+   function showPackageMobile(packageId) {
+	   const mobileContentContainer = document.getElementById('mobile-content-container');
+	   const packages = {
+		   pricing1: `
+			   <h3 class="package-title">PACKAGE I</h3>
+			   <div class="pricing-header">
+				   <div class="price-badge">Ground Floor<br>Rs. 2300 / Sq.Ft</div>
+				   <div class="price-badge">First Floor<br>Rs. 2100 / Sq.Ft</div>
+			   </div>
+			   <ul class="pricing-details">
+				   <li>BASEMENT HEIGHT 5 FEET</li>
+					<li>FIRST QUALITY CHAMBER BRICKS</li>
+					<li>BRANDED TMT STEELS</li>
+					<li>2% x 2% VITRIFIED TILES</li>
+					<li>MAIN DOOR TEAKWOOD</li>
+			   </ul>
+			   <div class="extra-items" style="display: none;">
+				  <p>OTHER DOORS & WINDOWS<br> KONGU WITH ENAMEL PAINT</p>
+					<p>FINOLEX WIRES</p>
+					<p>INVERTER WIRING</p>
+					<p>BRANDED SWITCHES</p>
+					<p>GRANITE COOKING PLATFORM</p>
+					<p>BRANDED CLOSET WITH FLOOR<br> MOUNTED</p>
+					<p>WALL MIXER</p>
+					<p>SINK WITH STAINLESS STEEL</p>
+					<p>WALL PUTTY FOR INTERIORS</p>
+					<p>WALL ONLY</p>
+					<p>INTERIOR & EXTERIOR EMULSION<br> PAINT - IV GRADE PAINT</p>
+			   </div>
+			   <button class="read-more-btn">Read More</button>
+		   `,
+		   pricing2: `
+			   <h3 class="package-title">PACKAGE II</h3>
+			   <div class="pricing-header">
+				   <div class="price-badge">Ground Floor<br>Rs. 2500 / Sq.Ft</div>
+				   <div class="price-badge">First Floor<br>Rs. 2300 / Sq.Ft</div>
+			   </div>
+			   <ul class="pricing-details">
+				   <li>BASEMENT HEIGHT 5 FEET</li>
+					<li>FIRST QUALITY CHAMBER BRICKS</li>
+					<li>BRANDED TMT STEELS</li>
+					<li>4x2 VITRIFIED TILES</li>
+					<li>MAIN DOOR TEAKWOOD</li>
+			   </ul>
+			   <div class="extra-items" style="display: none;">
+				   <p>OTHER DOORS & WINDOWS KONGU WITH ENAMEL PAINT</p>
+					<p>MODULAR KITCHEN - WATER PROOF<br> HMR PRE LAMINATED SHEET</p>
+					<p>WARDROBES HMR PRE LAMINATED SHEET</p>
+					<p>FINOLEX WIRES</p>
+					<p>INVERTER WIRING</p>
+					<p>METAL BOXES WITH BRANDED<br> MODULAR SWITCHES</p>
+					<p>GRANITE COOKING PLATFORM</p>
+					<p>QUARTZ SINK WITH SINGLE BOWL</p>
+					<p>WALL MOUNTED CLOSET WITH FLUSH VALVE</p>
+					<p>WALL MIXER</p>
+					<p>WALL PUTTY INTERIOR WALL & CEILING</p>
+					<p>INTERIOR & EXTERIOR EMULSION<br> PAINT - III GRADE PAINT</p>
+
+			   </div>
+			   <button class="read-more-btn">Read More</button>
+		   `,
+		   pricing3: `
+			   <h3 class="package-title">PACKAGE III</h3>
+			   <div class="pricing-header">
+				   <div class="price-badge">Ground Floor<br>Rs. 2700 / Sq.Ft</div>
+				   <div class="price-badge">First Floor<br>Rs. 2500 / Sq.Ft</div>
+			   </div>
+			   <ul class="pricing-details">
+				  <ul>
+					<li>BASEMENT HEIGHT 5 FEET</li>
+					<li>FIRST QUALITY CHAMBER BRICKS</li>
+					<li>BRANDED TMT STEELS</li>
+					<li>+5% x 2% VITRIFIED TILES</li>
+					<li>ALL DOORS & WINDOWS TEAKWOOD WITH POLISH</li>
+				</ul>
+
+			   </ul>
+			   <div class="extra-items" style="display: none;">
+				   <p>MODULAR KITCHEN - HMR WATER<br> PROOF SHEET FINISHED WITH MICA</p>
+					<p>WARDROBES - HMR WATER PROOF LAMINATED SHEET</p>
+					<p>FINOLEX WIRES</p>
+					<p>INVERTER WIRING</p>
+					<p>BRANDED MODULAR SWITCHES</p>
+					<p>SYNTHETIC ARTIFICIAL MARBLE COOKING PLATFORM</p>
+					<p>QUARTZ SINK WITH DRAIN TRAY</p>
+					<p>BRANDED CLOSET WITH FLUSH VALVE</p>
+					<p>SHOWER WITH DIVERTER MIXER</p>
+					<p>COOL ROOF TILES IN TERRACE</p>
+					<p>WALL PUTTY INTERIOR WALL & CEILING</p>
+					<p>INTERIOR & EXTERIOR EMULSION PAINT - II GRADE PAINT</p>
+
+			   </div>
+			   <button class="read-more-btn">Read More</button>
+		   `,
+
+		   pricing4: `
+			   <h3 class="package-title">PACKAGE Ⅳ</h3>
+			   <div class="pricing-header">
+				   <div class="price-badge">Ground Floor<br>Rs. 2900 / Sq.Ft</div>
+				   <div class="price-badge">First Floor<br>Rs. 2700 / Sq.Ft</div>
+			   </div>
+			   <ul class="pricing-details">
+				   <ul>
+						<li>FIRST QUALITY CHAMBER BRICKS</li>
+						<li>BRANDED TMT STEELS</li>
+						<li>6x4 VITRIFIED TILES</li>
+						<li>ALL DOORS & WINDOWS TEAKWOOD <br> WITH POLISH</li>
+						<li>MODULAR KITCHEN - WATER PROOF</li>
+					</ul>
+
+			   </ul>
+			   <div class="extra-items" style="display: none;">
+				  <p>HMR SHEET MICA WITH PAINTED <br> GLASS FINISHING</p>
+					<p>WARDROBES WATER PROOF SHEET<br>
+					 WITH MIRROR PAINTED GLASS FINISHING</p>
+					<p>FINOLEX WIRES</p>
+					<p>INVERTER WIRING</p>
+					<p>BRANDED MODULAR SWITCHES</p>
+					<p>SYNTHETIC ARTIFICIAL MARBLE<br> COOKING PLATFORM</p>
+					<p>QUARTZ SINK WITH DOUBLE BOWL</p>
+					<p>BRANDED CLOSET WITH FLUSH VALVE</p>
+					<p>NATURAL STONE ELEVATION WORK<br> WITH EXTERIOR LED LIGHTS</p>
+					<p>INTERIOR STAIRCASE WITH LEPRATHO<br> FINISH GRANITE FLOORING &
+					 <br>TEAK WOOD RAILINGS WITH GLASS</p>
+					<p>FALSE CEILING WITH LED LIGHTS</p>
+					<p>COOL ROOF TILES IN TERRACE</p>
+					<p>WALL PUTTY INTERIOR WALL & CEILING</p>
+					<p>INTERIOR & EXTERIOR EMULSION</p>
+					<p>PAINT - I GRADE PAINT</p>
+
+			   </div>
+			   <button class="read-more-btn">Read More</button>
+		   `
+	   };
+   
+	   mobileContentContainer.innerHTML = packages[packageId] || 'Package not found!';
+   }
+   
+   function toggleReadMore(button) {
+	   const extraItems = button.closest('div').querySelector('.extra-items');
+	   if (!extraItems) return;
+   
+	   if (extraItems.style.display === 'none' || extraItems.style.display === '') {
+		   extraItems.style.display = 'block';
+		   button.textContent = 'Read Less';
+	   } else {
+		   extraItems.style.display = 'none';
+		   button.textContent = 'Read More';
+	   }
+   }
+   </script>
+   
+	
+
+
+
+
+</body>
+
+<!-- Mirrored from xinterio-demo.pbminfotech.com/html-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Dec 2024 12:03:44 GMT -->
+</html>
