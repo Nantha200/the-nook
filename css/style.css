@@ -137,8 +137,7 @@
 }
 .portfolio-one .pbmit-sortable-list a:before{
 	position: absolute;
-    counter-increment: pbmitbox3;
-    content: counter(pbmitbox3, decimal-leading-zero);
+   
     top: 0;
     right: 0;
     font-size: 12px;
@@ -1537,12 +1536,8 @@
     background-color: rgba(var(--pbmit-blackish-color-rgb), 0.2);
     transform: rotate(27deg);
 }
-.portfolio-single .pbmit-featured-img-wrapper{
-	padding-bottom: 80px;
-}	
-.portfolio-single .pbmit-featured-img-wrapper img{
-	border-radius: 30px;
-}
+
+
 .portfolio-single .ihbox-style-area{
 	border-radius: 20px;
 	margin-top: 55px;
@@ -1836,7 +1831,6 @@ aside.widget.widget-tag-cloud a:hover,
     display: inline-block;
     margin-bottom: 0;
     text-transform: uppercase;
-    border-radius: 30px;
     padding: 0 13px 0 20px;
     margin-bottom: 25px;
     color: var(--pbmit-white-color);
@@ -1882,9 +1876,7 @@ aside.widget.widget-tag-cloud a:hover,
     margin-bottom: 60px;
     position: relative;
 }
-.post.blog-classic .pbmit-featured-wrapper img{
-	border-radius: 30px;
-}
+
 .post.blog-classic:last-child {
     margin-bottom: 0px;
 }
@@ -2623,7 +2615,7 @@ label.error {
 .form-control{
 	margin-bottom: 20px;
 	font-size: 14px;
-	height: 60px;
+	/* height: 60px; */
 	line-height: normal;
 	padding: 10px 20px;
     font-weight: normal;
@@ -3029,4 +3021,8 @@ button.close span {
 	.icon-trigger{
 		margin-left: 10px;
 	   }
+}
+
+footer .links h5 {
+   color: white;
 }
