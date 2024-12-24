@@ -203,29 +203,14 @@
 
 
   
-  /* Basic Styling */
-.pbmit-sortable-list-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;  /* Allows items to wrap into rows */
-	justify-content: center;  /* Centers the items horizontally */
-  }
-  
-  .pbmit-sortable-list-ul li {
-	margin-left: -15px;  /* Spacing between items */
-	width: 120px;  /* Set a consistent width for each item */
-	display: flex;
-	justify-content: center;  /* Centers the text inside the link */
-  }
+
+
   
   .pbmit-sortable-link {
 	text-decoration: none;
 	color: #333;
 	padding: 10px 20px;
-	border: 1px solid #ddd;
-	border-radius: 4px;
+	
 	display: inline-block;
 	width: 100%;  /* Ensure each link takes full width inside its li */
 	text-align: center;
@@ -245,7 +230,6 @@
 	  display: grid;  /* Switch to grid layout */
 	  grid-template-columns: repeat(3, 1fr);  /* 2 equal-width columns */
 	  grid-template-rows: repeat(2, auto);  /* 3 rows, automatic height based on content */
-	  gap: 0px;  /* Space between grid items */
 	  justify-items: center;  /* Aligns the items horizontally */
 	}
   
@@ -267,13 +251,13 @@
 }
 
 
-
 /* Show the button only on mobile view */
 @media (max-width: 768px) {
     .icon-trigger {
         display: block; /* Show on smaller screens */
         text-align: center; /* Optional: Center the button */
         margin: 10px auto; /* Optional: Add spacing */
+	
     }
 }
 
@@ -293,6 +277,107 @@ transition: transform 0.3s ease; /* Optional: Smooth zoom effect on hover */
 .multi-columns-row .pbmit-featured-wrapper img:hover {
 transform: scale(1.05); /* Optional: Slight zoom effect on hover */
 }
+
+/* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap into rows */
+	justify-content: center; /* Centers the items horizontally */
+	gap: 5px; /* Reduces the gap between items */
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin: 0; /* Remove default margin */
+	width: 120px; /* Consistent width for each item */
+	display: flex;
+	justify-content: center; /* Centers the text inside the link */
+  }
+  
+
+  
+
+  /* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap into rows */
+	justify-content: center; /* Centers the items horizontally */
+	gap: 5px; /* Space between items */
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin: 0; /* Remove default margin */
+	width: 100px; /* Fixed width for each item */
+	height: 50px; /* Fixed height for consistent box size */
+	display: flex;
+	align-items: center; /* Vertically center content */
+	justify-content: center; /* Horizontally center content */
+	border: 1px solid #ddd; /* Add border for outline */
+	background: #f0f0f0; /* Optional: Add background color */
+	box-sizing: border-box; /* Include padding in dimensions */
+	text-align: center;
+	border-radius:10px;
+
+  }
+  
+  /* Highlight selected link */
+  .pbmit-sortable-link.pbmit-selected {
+	background-color: #007bff; /* Highlight color */
+	color: white;
+	border-color: #007bff;
+  }
+  
+  /* Mobile view with 2 columns */
+  @media (max-width: 767px) {
+	.pbmit-sortable-list-ul {
+	  display: grid; /* Switch to grid layout */
+	  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+	  gap: 5px; /* Space between items */
+	  justify-items: center; /* Align items horizontally */
+	}
+  
+	.pbmit-sortable-link {
+	  width: 100%; /* Stretch link to fill the box */
+	  height: 100%; /* Fill the entire box height */
+	  display: flex;
+	  align-items: center; /* Center text vertically */
+	  justify-content: center; /* Center text horizontally */
+	}
+  }
+  
+
+
+@media (max-width: 1200px) {
+	
+	.icon-trigger{
+	 margin-left: 400px;
+	}
+ }
+ @media (max-width: 790px){
+	 .icon-trigger{
+		 margin-left: 400px;
+		}
+ }
+ @media (max-width: 490px){
+	 .icon-trigger{
+		 margin-left: 100px;
+		}
+ }
+ @media (max-width: 380px){
+	 .icon-trigger{
+		 margin-left: 60px;
+		}
+ }
+ @media (max-width: 325px){
+	 .icon-trigger{
+		 margin-left: 10px;
+		}
+ }
 
 	  </style>
 
@@ -346,16 +431,16 @@ transform: scale(1.05); /* Optional: Slight zoom effect on hover */
 										
 									</div>
 								
-										<div class="container-fluid">
-											<div class="navbar-header">
-												<div class="icon-trigger">
-													<button type="button" class="pbmit-button-text btn btn-info signup" data-toggle="modal" data-target="#exampleModal">
-														<i class="fas fa-user"></i>
-													</button>
-												</div>
+									<div class="container-fluid">
+										<div class="navbar-header">
+											<div class="icon-trigger">
+												<button type="button" class="pbmit-button-text btn btn-info signup" data-toggle="modal" data-target="#exampleModal">
+													<i class="fas fa-user"></i>
+												</button>
 											</div>
-								
 										</div>
+							
+									</div>
 										
 							
 									
@@ -1022,11 +1107,11 @@ transform: scale(1.05); /* Optional: Slight zoom effect on hover */
 
 
 								<ul class="pbmit-sortable-list-ul">
-									<li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*">All</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="architecture">Architecture</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="bedroom">Bedroom</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="diningroom">Dining</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="kitchen">Kitchen</a></li>
+									<li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*" style="margin-left:40px">All</a></li>
+									<li style="width:110px; margin-left:0px;"><a href="#" class="pbmit-sortable-link" data-sortby="architecture" style="margin-left:-10px;">Architecture</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="bedroom" style="margin-left:10px">Bedroom</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="diningroom" style="margin-left:10px">Dining</a></li>
+									<li><a href="#" class="pbmit-sortable-link" data-sortby="kitchen" style="margin-left:10px">Kitchen</a></li>
 									<li><a href="#" class="pbmit-sortable-link" data-sortby="bathroom">Bathroom</a></li>
 								</ul>
 							</div>
@@ -1918,8 +2003,8 @@ transform: scale(1.05); /* Optional: Slight zoom effect on hover */
 				</div>
 		  
 				<!-- Links -->
-				<div class="col-md-4">
-				  <h5 style="color:black;">Our Links</h5>
+				<div class="col-md-4 links">
+				  <h5 style="color:white;">Our Links</h5>
 				  <ul style="list-style: none; padding: 0;">
 					<li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
 					<li><a href="about-us.html" style="color: white; text-decoration: none;">About Us</a></li>
