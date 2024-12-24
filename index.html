@@ -379,6 +379,77 @@ transform: scale(1.05); /* Optional: Slight zoom effect on hover */
 		}
  }
 
+
+
+
+
+ @media (max-width: 768px) {
+    .pbmit-sortable-list-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+        grid-gap: 10px; /* Space between items */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pbmit-sortable-list-ul li {
+        text-align: center;
+        margin-bottom: 10px; /* Space between items */
+    }
+
+
+}
+
+* Mobile view with 2 columns */
+  @media (max-width: 767px) {
+	
+	.pbmit-sortable-link {
+	  width: 200px; /* Stretch link to fill the box */
+	  height: 100%; /* Fill the entire box height */
+	  display: flex;
+	  align-items: center; /* Center text vertically */
+	  justify-content: center; /* Center text horizontally */
+	}
+  }
+
+    /* Basic Styling */
+.pbmit-sortable-list-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; /* Allows items to wrap into rows */
+	justify-content: center; /* Centers the items horizontally */
+
+  }
+  
+  .pbmit-sortable-list-ul li {
+	margin: 0; /* Remove default margin */
+	width: 120px; /* Fixed width for each item */
+	height: 50px; /* Fixed height for consistent box size */
+	display: flex;
+	align-items: center; /* Vertically center content */
+	justify-content: center; /* Horizontally center content */
+	border: 1px solid #ddd; /* Add border for outline */
+	background: #f0f0f0; /* Optional: Add background color */
+	text-align: center;
+
+
+  }
+
+  .pbmit-element-posts-wrapper{
+	margin-top:50px;
+  }
+
+  .pbmit-sortable-list a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-weight: 400;
+    min-width: 100px;
+    border-radius: 10px;
+}
 	  </style>
 
 
@@ -1104,16 +1175,15 @@ transform: scale(1.05); /* Optional: Slight zoom effect on hover */
 						<div class="col-md-12 col-xl-8">
 							<div class="pbmit-sortable-list">
 							
-
-
-								<ul class="pbmit-sortable-list-ul">
-									<li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*" style="margin-left:40px">All</a></li>
-									<li style="width:110px; margin-left:0px;"><a href="#" class="pbmit-sortable-link" data-sortby="architecture" style="margin-left:-10px;">Architecture</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="bedroom" style="margin-left:10px">Bedroom</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="diningroom" style="margin-left:10px">Dining</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="kitchen" style="margin-left:10px">Kitchen</a></li>
-									<li><a href="#" class="pbmit-sortable-link" data-sortby="bathroom">Bathroom</a></li>
-								</ul>
+									<ul class="pbmit-sortable-list-ul">
+										<li><a href="#" class="pbmit-sortable-link pbmit-selected" data-sortby="*" style="margin-left:-40px;">All</a></li>
+										<li><a href="#" class="pbmit-sortable-link" data-sortby="architecture" style="margin-left:-10px;">Architecture</a></li>
+										<li><a href="#" class="pbmit-sortable-link" data-sortby="bedroom" style="margin-left:-20px;">Bedroom</a></li>
+										<li><a href="#" class="pbmit-sortable-link" data-sortby="diningroom" style="margin-left:-20px;">Dining</a></li>
+										<li><a href="#" class="pbmit-sortable-link" data-sortby="kitchen" style="margin-left:-20px;">Kitchen</a></li>
+										<li><a href="#" class="pbmit-sortable-link" data-sortby="bathroom" style="margin-left:-20px;">Bathroom</a></li>
+									</ul>
+								
 							</div>
 						</div>
 					</div>
