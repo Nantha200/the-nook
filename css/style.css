@@ -1,24 +1,3 @@
-/******************************
-
-    00 - Home
-    01 - Inner Page
-	    01 - About Us
-		02 - Our History
-		03 - Service Detail
-        04 - Portfolio Detail
-        05 - Blog Detail
-             Sidebar Right
-             Blog Classic
-             Blog Single
-        06 - Team Single Detail
-        07 - Contact Us
-        08 - Comment Form
-    
-******************************/
-
-/*----------------------------------------*/
-/*  00 - Home
-/*----------------------------------------*/
 #page{
 	overflow: hidden;
 }
@@ -129,6 +108,7 @@
 .portfolio-one .pbmit-sortable-list-ul li a.pbmit-selected{
 	background-color: transparent;
 	color: var(--pbmit-global-color);
+  
 }
 .portfolio-one .pbmit-sortable-list a{
 	position: relative;

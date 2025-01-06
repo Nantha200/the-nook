@@ -573,8 +573,7 @@ body {
 		transition-delay: 300ms;
 	}
 	.active .pbmit-mobile-menu-bg {
-		opacity: 1;
-		width: 100%;
+		
 		visibility: visible;
 		transition: all 900ms ease;
 		-moz-transition: all 900ms ease;
