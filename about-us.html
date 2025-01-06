@@ -157,8 +157,6 @@
 				display: flex;
 				gap: 40px;
 				overflow-x: auto; /* Enable horizontal scrolling */
-				scroll-snap-type: x mandatory; /* Snap scrolling for smoothness */
-				-webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
 			}
 
 			.image-carousel img {
@@ -321,25 +319,7 @@
 				autoScroll();
 			});
 			
-			document.querySelectorAll('.carousel-image').forEach(image => {
-				image.addEventListener('click', function () {
-					this.classList.add('animate');
-					// Remove the class after animation ends for re-triggering
-					setTimeout(() => {
-						this.classList.remove('animate');
-					}, 200); // Match the CSS transition duration
-				});
-			});
-
-			document.querySelectorAll('.zoomable-image').forEach(image => {
-				image.addEventListener('click', function () {
-					if (this.classList.contains('zoomed')) {
-						this.classList.remove('zoomed'); // Zoom out
-					} else {
-						this.classList.add('zoomed'); // Zoom in
-					}
-				});
-			});
+		
 			
 			
 		</script>
